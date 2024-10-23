@@ -1,0 +1,133 @@
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+.custom-text-color {
+  color: #507687;
+}
+.custom-nav {
+  color: #0b192c;
+}
+.custom-nav a {
+  color: #ffffff;
+}
+.custom-nav a:hover {
+  color: #faf5b8;
+}
+.nameColor {
+  color: #3c5966;
+}
+.pill-color {
+  color: #7c9d96;
+}
+.card {
+  transition: background-color 0.3s, color 0.3s;
+}
+.card:hover {
+  background-color: #f9d689;
+  color: #384b70;
+}
+.custom-card {
+  border: #384b70 3px solid;
+  box-shadow: 2px 5px 0px #7c9d96;
+}
+.custom-card:hover {
+  background-color: #e0a85e53;
+  transform: scale(1.05);
+  color: inherit;
+  
+}
+.imgContainer {
+  max-width: 400px;
+  border: 5px solid #3c5966;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.imgContainer img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.text-container {
+  margin-top: 20px;
+}
+
+/* Dark mode styles */
+.btn-Dmode {
+  background-color: #507687;
+  color: #384b70;
+  border: 2px solid #a4d0c7;
+}
+.btn-Dmode:hover {
+  background-color: #343a40 !important ;
+}
+
+body[data-bs-theme="dark"] {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+body[data-bs-theme="dark"] .custom-text-color {
+  color: #a1b2b1;
+}
+body[data-bs-theme="dark"] .nameColor {
+  color: #afc1c0;
+}
+body[data-bs-theme="dark"] .pill-color {
+  color: #3c5966;
+}
+nav {
+  background-color: #658c9a;
+}
+.navbar-toggler:hover {
+  border: 2px solid white;
+}
+
+body[data-bs-theme="dark"] nav {
+  background-color: #3c5b66;
+}
+.social-icon img {
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover img {
+  transform: scale(1.5);
+}
+
+.btn-custom {
+  background-color: #e0a75e;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.btn-custom:hover {
+  background-color: #faf5b8;
+  color: #3f4141;
+  border: 2px solid #68696a;
+}
+
+@media (max-width: 576px) {
+  .imgContainer {
+    margin: 0 auto;
+  }
+  .text-container {
+    margin-top: 15px;
+  }
+}
+
+.fade-in {
+  opacity: 0.5;
+  transform: translateY(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(20px);
+}
+
+/* My Cv */
+.custom-card-cv {
+  border: #54678c 3px solid;
+  box-shadow: 2px 5px 0px #7c9d96;
+  border-radius: 5px;
+}

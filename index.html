@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Medrana - Portfolio 2024</title>
+    <link rel="icon" type="image/x-icon" href="img/draw.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body id="body" data-bs-theme="light">
+    <header>
+      <nav class="navbar navbar-expand-lg shadow fixed-top custom-nav">
+        <div class="container-fluid">
+          <h5 style="color: #f8f9fa">My Portfolio</h5>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <button
+            class="btn btn-outline-secondary text-light btn-Dmode"
+            id="btnColor"
+            onclick="changeColorMode()"
+          >
+            Dark Mode
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section
+      id="home"
+      class="mt-5 fade-in"
+      style="
+        background: url('img/home.svg') no-repeat center center;
+        background-size: cover;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+      "
+    >
+      <div class="container">
+        <div class="row justify-content-center align-items-center text-center">
+          <div
+            class="col-12 col-md-6 d-flex justify-content-center order-1 order-md-2"
+          >
+            <img
+              src="img/art.svg"
+              alt="Cartoon Me"
+              class="img-fluid rounded mt-5 w-75 w-md-100 box-shadow"
+            />
+          </div>
+          <div
+            class="custom-text-color col-12 col-md-6 text-container order-2 order-md-1 fade-in"
+          >
+            <div class="p-3">
+              <h1 class="fw-bold display-4 fade-in">Welcome to My Creative Space!</h1>
+              <h4 class="mt-3 fade-in">
+                <em>Take a look around, explore my work, and let’s connect!</em>
+              </h4>
+              <p class="mt-4">Let’s go!</p>
+              <div class="d-flex justify-content-center">
+                <a href="#contact" class="btn btn-custom fade-in">Get in Touch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <div class="container mt-5 pt-5 " id="about">
+      <div class="row mx-auto align-items-center">
+        <div class="col-lg-6 d-flex justify-content-center">
+          <div class="image-container imgContainer">
+            <img src="img/5.svg" alt="Profile Pic" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-lg-6 custom-text-color text-container">
+          <div class="p-3 text-center text-md-start">
+            <div class="nameColor">
+              <h2>About Me</h2>
+              <h1 class="fw-bold display-5">Anne Kathlyn M. Medrana</h1>
+              <h4 class="fs-6 fs-md-5">
+                <em class="fw-bold">Bachelor of Information Technology</em> -
+                <i
+                  >Student at the Polytechnic University of the Philippines
+                  (Sto. Tomas Campus).</i
+                >
+              </h4>
+            </div>
+            <p class="custom-text-color fs-6" style="text-align: justify">
+              I am passionate about UI/UX and graphic design, and I enjoy art
+              and leadership roles. My hobbies include playing guitar, gaming,
+              and watching anime, which inspire my creativity. I am efficient in
+              Canva and eager to contribute to team efforts.<br /><br />
+              <em
+                >Feel free to explore and get in touch if you’re interested in
+                collaborating or learning more about my work!</em
+              >
+            </p>
+          </div>
+          <div class="row mt-4 mx-auto">
+            <div class="col-12 col-sm-6 col-md-4 col-sm-2 mb-2">
+              <a style="text-decoration: none" href="activities.html">
+                <div class="card py-2 text-center rounded-5">
+                  <div class="h3 pill-color">Activities</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-2">
+              <a style="text-decoration: none" href="designs.html">
+                <div class="card py-2 text-center rounded-5">
+                  <div class="h3 pill-color">Designs</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-2">
+              <a style="text-decoration: none" href="myCv.html">
+                <div class="card py-2 text-center rounded-5">
+                  <div class="h3 pill-color">My CV</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section
+      id="contact"
+      class="custom-text-color content-section py-5"
+      style="
+        background: url('img/footer.svg') no-repeat center center;
+        background-size: cover;
+      "
+    >
+      <div class="container text-center p-5">
+        <h2 class="mb-4 fw-bold mt-3">Connect with Me!</h2>
+
+        <div
+          class="social-media mb-4 d-flex justify-content-center align-items-center"
+        >
+          <a
+            href="https://www.facebook.com/annekathlynmedrana.0033/"
+            target="_blank"
+            class="me-3 social-icon"
+          >
+            <img src="img/fb.png" alt="Facebook" style="width: 50px" />
+          </a>
+          <a
+            href="https://www.instagram.com/kthlyniv/"
+            target="_blank"
+            class="me-3 social-icon"
+          >
+            <img src="img/ig.png" alt="Instagram" style="width: 50px" />
+          </a>
+          <a
+            href="mailto:annekathlynmedrana03@gmail.com"
+            class="me-3 social-icon"
+          >
+            <img src="img/gmail.png" alt="Gmail" style="width: 50px" />
+          </a>
+        </div>
+
+        <p><strong>Contact Number:</strong> +6393 0777 6915</p>
+        <p class="fw-bold">
+          <em
+            >Feel free to contact me for inquiries, collaborations, or just to
+            say hi!</em
+          >
+        </p>
+
+        <a href="mailto:annekathlynmedrana03@gmail.com" class="btn btn-custom">
+          Send a message!
+        </a>
+    </section>
+    </main>
+
+    <footer class="text-center custom-text-color">
+      <p>© 2024 Anne Kathlyn M. Medrana. All rights reserved.</p>
+    </footer>
+
+    <script>
+      var colorMode = localStorage.getItem("theme") || "light";
+
+      function setTheme(theme) {
+        document.getElementById("body").setAttribute("data-bs-theme", theme);
+        document.getElementById("btnColor").innerHTML = theme === "dark" ? "Light Mode" : "Dark Mode";
+        localStorage.setItem("theme", theme); // Save the theme in localStorage
+      }
+
+      // Apply the initial theme; default to light mode if no preference is saved
+      setTheme(colorMode === "dark" ? "dark" : "light");
+
+      function changeColorMode() {
+        colorMode = colorMode === "light" ? "dark" : "light";
+        setTheme(colorMode);
+      }
+    </script> 
+
+<script>
+  window.onload = function() {
+    const homeSection = document.getElementById('home');
+    if (homeSection) {
+      homeSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    const fadeIns = document.querySelectorAll('.fade-in');
+    fadeIns.forEach((element) => {
+      element.classList.add('visible'); 
+    });
+  };
+</script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
